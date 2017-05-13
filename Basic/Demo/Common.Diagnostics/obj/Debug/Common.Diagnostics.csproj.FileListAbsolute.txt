@@ -1,0 +1,9 @@
+C:\Temp\Basic\Demo\Common.Diagnostics\bin\Debug\Bushido.Common.Diagnostics.dll
+C:\Temp\Basic\Demo\Common.Diagnostics\bin\Debug\Bushido.Common.Diagnostics.pdb
+C:\Temp\Basic\Demo\Common.Diagnostics\obj\Debug\Bushido.Common.Diagnostics.dll
+C:\Temp\Basic\Demo\Common.Diagnostics\obj\Debug\Bushido.Common.Diagnostics.pdb
+E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Diagnostics\bin\Debug\Bushido.Common.Diagnostics.dll
+E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Diagnostics\bin\Debug\Bushido.Common.Diagnostics.pdb
+E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Diagnostics\obj\Debug\Common.Diagnostics.csprojResolveAssemblyReference.cache
+E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Diagnostics\obj\Debug\Bushido.Common.Diagnostics.dll
+E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Diagnostics\obj\Debug\Bushido.Common.Diagnostics.pdb
