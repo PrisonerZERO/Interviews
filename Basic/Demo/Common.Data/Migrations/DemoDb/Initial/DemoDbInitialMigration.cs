@@ -51,10 +51,8 @@ namespace Bushido.Common.Data.Migrations.DemoDb
 
         private void UpSchema_DBO()
         {
-            // NOTE: Typically, I prefer to put tables in a DATA schema, but I will forgoe this for the demo
-
             CreateTable(
-                "dbo.BankAccount",
+                "data.BankAccount",
                 c => new
                 {
                     BankAccountId = c.Int(nullable: false, identity: true),
@@ -62,27 +60,55 @@ namespace Bushido.Common.Data.Migrations.DemoDb
                     OwnerFullName = c.String(nullable: false, maxLength: 50),
                     Balance = c.Decimal(nullable: false, storeType: "money"),
                     AnnualPercentageRate = c.Decimal(nullable: false, precision: 18, scale: 2),
+                    ExecutedByName = c.String(nullable: false, maxLength: 400),
+                    ExecutedDatetime = c.DateTime(nullable: false)
                 })
                 .PrimaryKey(t => t.BankAccountId)
-                .ForeignKey("dbo.BankAccountType", t => t.BankAccountTypeId, cascadeDelete: true)
-                .Index(t => t.BankAccountTypeId);
+                .ForeignKey("data.BankAccountType", t => t.BankAccountTypeId, cascadeDelete: true)
+                .Index(t => new { t.BankAccountTypeId, t.OwnerFullName }, unique: false, name: "IX_BankAccount_OwnerByAccountType");
 
             CreateTable(
-                "dbo.BankAccountType",
+                "data.BankAccountHistory",
+                c => new
+                {
+                    BankAccountHistoryId = c.Int(nullable: false, identity: true),
+                    BankAccountId = c.Int(nullable: false),
+                    BankAccountTypeId = c.Int(nullable: false),
+                    OwnerFullName = c.String(nullable: false, maxLength: 50),
+                    Balance = c.Decimal(nullable: false, storeType: "money"),
+                    AnnualPercentageRate = c.Decimal(nullable: false, precision: 18, scale: 2),
+                    ExecutedByName = c.String(nullable: false, maxLength: 400),
+                    ExecutedDatetime = c.DateTime(nullable: false),
+                    TransactionTypeName = c.String(nullable: false, maxLength: 50),
+                })
+                .PrimaryKey(t => new { t.BankAccountHistoryId, t.BankAccountId, t.BankAccountTypeId, t.OwnerFullName, t.Balance, t.AnnualPercentageRate, t.ExecutedByName, t.ExecutedDatetime, t.TransactionTypeName })
+                .Index(t => new { t.BankAccountId, t.BankAccountTypeId, t.OwnerFullName }, unique: false, name: "IX_BankAccountHistory_KeysByOwner");
+
+            CreateTable(
+                "data.BankAccountType",
                 c => new
                 {
                     BankAccountTypeId = c.Int(nullable: false, identity: true),
                     BankAccountTypeName = c.String(nullable: false, maxLength: 50),
+                    ExecutedByName = c.String(nullable: false, maxLength: 400),
+                    ExecutedDatetime = c.DateTime(nullable: false),
                 })
-                .PrimaryKey(t => t.BankAccountTypeId);
+                .PrimaryKey(t => t.BankAccountTypeId)
+                .Index(t => t.BankAccountTypeName, unique: false, name: "IX_BankAccountType_ByAccountType");
         }
 
         private void DownSchema_DBO()
         {
-            DropForeignKey("dbo.BankAccount", "BankAccountTypeId", "dbo.BankAccountType");
-            DropIndex("dbo.BankAccount", new[] { "BankAccountTypeId" });
-            DropTable("dbo.BankAccountType");
-            DropTable("dbo.BankAccount");
+            // FOREIGN KEYS
+            DropForeignKey("data.BankAccount", "BankAccountTypeId", "data.BankAccountType");
+
+            // FOREIGN KEY INDEXES
+            DropIndex("data.BankAccount", new[] { "BankAccountTypeId" });
+
+            // TABLES
+            DropTable("data.BankAccountType");
+            DropTable("data.BankAccount");
+            DropTable("data.BankAccountHistory");
         }
 
         #endregion

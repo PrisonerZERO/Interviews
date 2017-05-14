@@ -69,6 +69,7 @@
     <Compile Include="..\CommonAssemblyInfo.cs">
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="Configurations\DemoDb\BankAccountHistoryConfiguration.cs" />
     <Compile Include="DemoDbContext.cs" />
     <Compile Include="DemoDbUnitOfWork.cs" />
     <Compile Include="Configurations\DemoDb\BankAccountConfiguration.cs" />
@@ -78,9 +79,9 @@
     <Compile Include="IDemoDbUnitOfWork.cs" />
     <Compile Include="IDbContext.cs" />
     <Compile Include="IUnitOfWork.cs" />
-    <Compile Include="Migrations\DemoDb\Initial\201705130938491_DemoDbInitial.cs" />
-    <Compile Include="Migrations\DemoDb\Initial\201705130938491_DemoDbInitial.Designer.cs">
-      <DependentUpon>201705130938491_DemoDbInitial.cs</DependentUpon>
+    <Compile Include="Migrations\DemoDb\Initial\201705141221591_DemoDbInitial.cs" />
+    <Compile Include="Migrations\DemoDb\Initial\201705141221591_DemoDbInitial.Designer.cs">
+      <DependentUpon>201705141221591_DemoDbInitial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\DbMigrationBase.cs" />
     <Compile Include="Migrations\DemoDb\DemoDbConfiguration.cs" />
@@ -110,18 +111,26 @@
     <Content Include="Migrations\DemoDb\Initial\Post-Deployment Scripts\01.Seed_BankAccountTypes.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Migrations\DemoDb\Initial\Pre-Deployment Scripts\00.Drops.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Migrations\DemoDb\Initial\Pre-Deployment Scripts\01.SetupAndSecurity.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Migrations\DemoDb\Initial\Triggers\data.trg_diu_BankAccount.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Migrations\DemoDb\Initial\Assemblies\" />
     <Folder Include="Migrations\DemoDb\Initial\Functions\" />
-    <Folder Include="Migrations\DemoDb\Initial\Pre-Deployment Scripts\" />
     <Folder Include="Migrations\DemoDb\Initial\Stored Procedures\" />
-    <Folder Include="Migrations\DemoDb\Initial\Triggers\" />
     <Folder Include="Migrations\DemoDb\Initial\Views\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\DemoDb\Initial\201705130938491_DemoDbInitial.resx">
-      <DependentUpon>201705130938491_DemoDbInitial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\DemoDb\Initial\201705141221591_DemoDbInitial.resx">
+      <DependentUpon>201705141221591_DemoDbInitial.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,9 +1,12 @@
-﻿SET IDENTITY_INSERT [dbo].[BankAccountType] ON;
+﻿SET IDENTITY_INSERT [data].[BankAccountType] ON;
 GO
 
-INSERT INTO [dbo].[BankAccountType](BankAccountTypeId, BankAccountTypeName) VALUES (1, 'Checking Account')
+DECLARE @ExecutedByName NVARCHAR(400) = 'bushido/systemseed'
+DECLARE @ExecutedDatetime DATETIME = (SELECT GETUTCDATE());
 
-INSERT INTO [dbo].[BankAccountType](BankAccountTypeId, BankAccountTypeName) VALUES (2, 'Savings Account')
+INSERT INTO [data].[BankAccountType](BankAccountTypeId, BankAccountTypeName, ExecutedByName, ExecutedDatetime) VALUES (1, 'Checking Account', @ExecutedByName, @ExecutedDatetime)
 
-SET IDENTITY_INSERT [dbo].[BankAccountType] OFF;
+INSERT INTO [data].[BankAccountType](BankAccountTypeId, BankAccountTypeName, ExecutedByName, ExecutedDatetime) VALUES (2, 'Savings Account', @ExecutedByName, @ExecutedDatetime)
+
+SET IDENTITY_INSERT [data].[BankAccountType] OFF;
 GO

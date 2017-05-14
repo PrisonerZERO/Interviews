@@ -14,6 +14,5 @@ E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Models\bin\Debug\Entit
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Models\bin\Debug\EntityFramework.SqlServer.dll
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Models\bin\Debug\EntityFramework.xml
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Models\bin\Debug\EntityFramework.SqlServer.xml
-E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Models\obj\Debug\Common.Models.csprojResolveAssemblyReference.cache
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Models\obj\Debug\Bushido.Common.Models.dll
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Models\obj\Debug\Bushido.Common.Models.pdb

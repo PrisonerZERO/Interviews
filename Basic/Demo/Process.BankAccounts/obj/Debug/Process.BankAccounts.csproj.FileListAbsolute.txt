@@ -60,3 +60,6 @@ E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Process.BankAccounts\bin\Debu
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Process.BankAccounts\obj\Debug\Process.BankAccounts.csprojResolveAssemblyReference.cache
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Process.BankAccounts\obj\Debug\Bushido.Process.BankAccounts.dll
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Process.BankAccounts\obj\Debug\Bushido.Process.BankAccounts.pdb
+E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Process.BankAccounts\bin\Debug\Migrations\DemoDb\Initial\Pre-Deployment Scripts\01.SetupAndSecurity.sql
+E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Process.BankAccounts\bin\Debug\Migrations\DemoDb\Initial\Pre-Deployment Scripts\00.Drops.sql
+E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Process.BankAccounts\bin\Debug\Migrations\DemoDb\Initial\Triggers\data.trg_diu_BankAccount.sql

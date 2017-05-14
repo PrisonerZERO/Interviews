@@ -13,7 +13,7 @@ namespace Bushido.Common.Data.Migrations.DemoDb
         
         string IMigrationMetadata.Id
         {
-            get { return "201705130938491_DemoDbInitial"; }
+            get { return "201705141221591_DemoDbInitial"; }
         }
         
         string IMigrationMetadata.Source

@@ -50,6 +50,7 @@ namespace Bushido.Common.Data
         #region dbo
 
         public virtual DbSet<BankAccount> BankAccounts { get; set; }
+        public virtual DbSet<BankAccountHistory> BankAccountHistory { get; set; }
         public virtual DbSet<BankAccountType> BankAccountTypes { get; set; }
 
         #endregion
@@ -87,6 +88,7 @@ namespace Bushido.Common.Data
 
             // MODELS - CONFIGURATION
             modelBuilder.Configurations.Add(new BankAccountConfiguration(modelBuilder));
+            modelBuilder.Configurations.Add(new BankAccountHistoryConfiguration(modelBuilder));
             modelBuilder.Configurations.Add(new BankAccountTypeConfiguration(modelBuilder));
         }
 

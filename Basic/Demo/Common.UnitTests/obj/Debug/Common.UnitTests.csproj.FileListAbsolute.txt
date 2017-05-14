@@ -88,3 +88,6 @@ E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.UnitTests\bin\Debug\Mo
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.UnitTests\obj\Debug\Common.UnitTests.csprojResolveAssemblyReference.cache
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.UnitTests\obj\Debug\Bushido.Common.UnitTests.dll
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.UnitTests\obj\Debug\Bushido.Common.UnitTests.pdb
+E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.UnitTests\bin\Debug\Migrations\DemoDb\Initial\Pre-Deployment Scripts\01.SetupAndSecurity.sql
+E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.UnitTests\bin\Debug\Migrations\DemoDb\Initial\Pre-Deployment Scripts\00.Drops.sql
+E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.UnitTests\bin\Debug\Migrations\DemoDb\Initial\Triggers\data.trg_diu_BankAccount.sql

@@ -6,6 +6,7 @@
 
 namespace Bushido.Common.Models.DemoDb
 {
+    using System;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
@@ -27,6 +28,12 @@ namespace Bushido.Common.Models.DemoDb
         public decimal Balance { get; set; }
 
         public decimal AnnualPercentageRate { get; set; }
+
+        [Required]
+        [StringLength(400)]
+        public string ExecutedByName { get; set; }
+
+        public DateTime ExecutedDatetime { get; set; }
 
         public virtual BankAccountType BankAccountType { get; set; }
     }

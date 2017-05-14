@@ -50,7 +50,10 @@ E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Data\bin\Debug\Microso
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Data\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Data\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Data\obj\Debug\Common.Data.csprojResolveAssemblyReference.cache
-E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Data\obj\Debug\Bushido.Common.Data.Migrations.DemoDb.DemoDbInitial.resources
-E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Data\obj\Debug\Common.Data.csproj.GenerateResource.Cache
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Data\obj\Debug\Common.Data.dll
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Data\obj\Debug\Common.Data.pdb
+E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Data\obj\Debug\Bushido.Common.Data.Migrations.DemoDb.DemoDbInitial.resources
+E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Data\obj\Debug\Common.Data.csproj.GenerateResource.Cache
+E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Data\bin\Debug\Migrations\DemoDb\Initial\Pre-Deployment Scripts\01.SetupAndSecurity.sql
+E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Data\bin\Debug\Migrations\DemoDb\Initial\Pre-Deployment Scripts\00.Drops.sql
+E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Data\bin\Debug\Migrations\DemoDb\Initial\Triggers\data.trg_diu_BankAccount.sql

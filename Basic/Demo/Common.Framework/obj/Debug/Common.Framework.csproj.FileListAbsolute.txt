@@ -4,6 +4,5 @@ C:\Temp\Basic\Demo\Common.Framework\obj\Debug\Bushido.Common.Framework.dll
 C:\Temp\Basic\Demo\Common.Framework\obj\Debug\Bushido.Common.Framework.pdb
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Framework\bin\Debug\Bushido.Common.Framework.dll
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Framework\bin\Debug\Bushido.Common.Framework.pdb
-E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Framework\obj\Debug\Common.Framework.csprojResolveAssemblyReference.cache
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Framework\obj\Debug\Bushido.Common.Framework.dll
 E:\GITHUB\Cloud\PrisonerZERO\Interviews\Basic\Demo\Common.Framework\obj\Debug\Bushido.Common.Framework.pdb

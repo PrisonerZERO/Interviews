@@ -58,6 +58,7 @@
     </Compile>
     <Compile Include="DemoDb\BankAccount.cs" />
     <Compile Include="DemoDb\BankAccountType.cs" />
+    <Compile Include="DemoDb\BankAccountHistory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
