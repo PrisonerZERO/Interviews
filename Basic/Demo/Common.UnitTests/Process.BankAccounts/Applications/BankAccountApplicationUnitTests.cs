@@ -30,7 +30,7 @@ namespace Bushido.Common.UnitTests.BankAccounts
 
             // -----
             // ACT
-            var account = application.CreateNew(AccountType.Checking, null, 10000000.00M, 3.00M);
+            var account = application.CreateNew(AccountType.Checking, null, 10000000.00M, 3.00M, Builder.ExecutedBy);
 
             // -----
             // ASSERT - See attribute
@@ -46,7 +46,7 @@ namespace Bushido.Common.UnitTests.BankAccounts
 
             // -----
             // ACT
-            var account = application.CreateNew(AccountType.Checking, "Scrooge McDuck", -100.00M, 3.00M);
+            var account = application.CreateNew(AccountType.Checking, "Scrooge McDuck", -100.00M, 3.00M, Builder.ExecutedBy);
 
             // -----
             // ASSERT - See attribute
@@ -62,7 +62,7 @@ namespace Bushido.Common.UnitTests.BankAccounts
 
             // -----
             // ACT
-            var account = application.CreateNew(AccountType.Checking, "Scrooge McDuck", 10000000.00M, -3.00M);
+            var account = application.CreateNew(AccountType.Checking, "Scrooge McDuck", 10000000.00M, -3.00M, Builder.ExecutedBy);
 
             // -----
             // ASSERT - See attribute
@@ -87,7 +87,7 @@ namespace Bushido.Common.UnitTests.BankAccounts
             // -----
             // ACT
             var application = Builder.CreateInstance<BankAccountApplication>(UnitOfWork);
-            var account = application.CreateNew(AccountType.Checking, "Scrooge McDuck", 10000000.00M, 3.00M);
+            var account = application.CreateNew(AccountType.Checking, "Scrooge McDuck", 10000000.00M, 3.00M, Builder.ExecutedBy);
             var accountType = UnitOfWork.BankAccountTypes.GetAll().Where(x => x.BankAccountTypeName == AccountType.Checking.ToStringValue()).SingleOrDefault();
 
             actualCount = UnitOfWork.BankAccounts.GetAll().Count();
@@ -119,7 +119,7 @@ namespace Bushido.Common.UnitTests.BankAccounts
             // -----
             // ACT
             var application = Builder.CreateInstance<BankAccountApplication>(UnitOfWork);
-            var account = application.CreateNew(AccountType.Savings, "Scrooge McDuck", 10000000.00M, 3.00M);
+            var account = application.CreateNew(AccountType.Savings, "Scrooge McDuck", 10000000.00M, 3.00M, Builder.ExecutedBy);
             var accountType = UnitOfWork.BankAccountTypes.GetAll().Where(x => x.BankAccountTypeName == AccountType.Savings.ToStringValue()).SingleOrDefault();
 
             actualCount = UnitOfWork.BankAccounts.GetAll().Count();

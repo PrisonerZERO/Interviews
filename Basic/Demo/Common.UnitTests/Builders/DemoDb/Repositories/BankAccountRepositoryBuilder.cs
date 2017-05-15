@@ -16,7 +16,7 @@ namespace Bushido.Common.UnitTests
     /// <summary>
     /// A concrete Mock Repository Builder class
     /// </summary>
-    public class BankAccountRepositoryBuilder : RepositoryBuilderBase
+    public class BankAccountRepositoryBuilder
     {
         #region <Constructor>
 

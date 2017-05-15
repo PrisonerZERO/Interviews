@@ -40,7 +40,7 @@ namespace Bushido.Process.BankAccounts
         /// <exception cref="ArgumentNullException">Non-Existent "OwnerFullName" argument throws this exception.</exception>
         /// <exception cref="ArgumentException">Invalid "StartingBalance" argument throws this exception.</exception>
         /// <exception cref="ArgumentException">Invalid "AnnualPercentageRate" argument throws this exception.</exception>
-        public BankAccount CreateNew(AccountType bankAccountType, string ownerFullName, decimal startingBalance, decimal annualPercentageRate)
+        public BankAccount CreateNew(AccountType bankAccountType, string ownerFullName, decimal startingBalance, decimal annualPercentageRate, string executedBy)
         {
             TraceHandler.TraceIn(TraceLevel.Info);
 
@@ -63,6 +63,8 @@ namespace Bushido.Process.BankAccounts
                 account.Balance = startingBalance;
                 account.BankAccountTypeId = accountType.BankAccountTypeId;
                 account.OwnerFullName = ownerFullName;
+                account.ExecutedByName = executedBy;
+                account.ExecutedDatetime = DateTime.UtcNow;
 
                 UnitOfWork.BankAccounts.Add(account);
                 UnitOfWork.SaveChanges();

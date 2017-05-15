@@ -9,7 +9,6 @@ namespace Bushido.Common.UnitTests
     using Common.Data;
     using Common.Models.DemoDb;
     using Moq;
-    using System;
     using System.Collections.Generic;
     using System.Data.Entity;
     using System.Linq;
@@ -17,7 +16,7 @@ namespace Bushido.Common.UnitTests
     /// <summary>
     /// A concrete Mock Repository Builder class
     /// </summary>
-    public class BankAccountTypeRepositoryBuilder : RepositoryBuilderBase, IRepositoryBuilder<BankAccountType>
+    public class BankAccountTypeRepositoryBuilder
     {
         #region <Constructor>
 

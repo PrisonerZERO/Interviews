@@ -89,7 +89,6 @@
     <Compile Include="Builders\DemoDb\DemoDbBuilderRepositories.cs" />
     <Compile Include="Builders\DemoDb\Repositories\BankAccountRepositoryBuilder.cs" />
     <Compile Include="Builders\DemoDb\Repositories\BankAccountTypeRepositoryBuilder.cs" />
-    <Compile Include="Builders\RepositoryBuilderBase.cs" />
     <Compile Include="Interfaces\Repositories\IRepositoryBuilder.cs" />
     <Compile Include="Process.BankAccounts\Applications\BankAccountApplicationUnitTests.cs" />
     <Compile Include="Process.BankAccounts\Strategies\IsOverdraftAlgorithmUnitTests.cs" />

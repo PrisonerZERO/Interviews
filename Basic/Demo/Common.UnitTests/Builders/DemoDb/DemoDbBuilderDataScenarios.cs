@@ -27,8 +27,18 @@ namespace Bushido.Common.UnitTests
 
         #region <Properties>
 
+        #region public
+
+        public string ExecutedBy { get { return @"mock\TestyMcTesterson"; } }
+
+        #endregion
+
+        #region protected
+
         protected DefaultDataScenario DefaultDataScenario { get { return _defaultDataScenario; } }
         protected OverdraftsDataScenario OverdraftsDataScenario { get { return _overdraftsDataScenario; } }
+
+        #endregion
 
         #endregion
 

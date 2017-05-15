@@ -14,7 +14,7 @@ namespace Bushido.Process.BankAccounts
     {
         #region <Methods>
 
-        BankAccount CreateNew(AccountType bankAccountType, string ownerFullName, decimal startingBalance, decimal annualPercentageRate);
+        BankAccount CreateNew(AccountType bankAccountType, string ownerFullName, decimal startingBalance, decimal annualPercentageRate, string executedBy);
 
         IEnumerable<BankAccount> FindOverdrafts(IAccountAlgorithm algorithm);
 
