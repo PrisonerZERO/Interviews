@@ -65,6 +65,7 @@ namespace Bushido.Common.Data.Migrations.DemoDb
                 })
                 .PrimaryKey(t => t.BankAccountId)
                 .ForeignKey("data.BankAccountType", t => t.BankAccountTypeId, cascadeDelete: true)
+                .Index(t => t.BankAccountTypeId)
                 .Index(t => new { t.BankAccountTypeId, t.OwnerFullName }, unique: false, name: "IX_BankAccount_OwnerByAccountType");
 
             CreateTable(
