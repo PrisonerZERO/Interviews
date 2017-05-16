@@ -11,7 +11,7 @@ namespace Bushido.Common.Models.DemoDb
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
-    [Table("dbo.BankAccountType")]
+    [Table("data.BankAccountType")]
     public partial class BankAccountType
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]

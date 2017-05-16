@@ -10,7 +10,7 @@ namespace Bushido.Common.Models.DemoDb
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
-    [Table("dbo.BankAccount")]
+    [Table("data.BankAccount")]
     public partial class BankAccount
     {
         [Key]

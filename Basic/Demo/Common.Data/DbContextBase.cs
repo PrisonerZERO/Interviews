@@ -16,7 +16,6 @@ namespace Bushido.Common.Data
     {
         #region <Fields>
 
-        private readonly Guid instanceId;
         private bool disposed;
 
         #endregion
@@ -25,12 +24,10 @@ namespace Bushido.Common.Data
 
         public DbContextBase()
         {
-            instanceId = Guid.NewGuid();
         }
 
         public DbContextBase(string nameOrConnectionString) : base(nameOrConnectionString)
         {
-            instanceId = Guid.NewGuid();
         }
 
         #endregion
@@ -38,8 +35,6 @@ namespace Bushido.Common.Data
         #region <Properties>
 
         public Database Db { get { return Database; } }
-
-        public Guid InstanceId { get { return instanceId; } }
 
         #endregion
 

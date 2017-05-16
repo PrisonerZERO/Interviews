@@ -1,11 +1,16 @@
+//------------------------------------------------------------------------------------------------------
+// <copyright company="Robert M Jordan LLC" division="Bushido">
+//     Copyright (c) Robert M. Jordan all rights reserved.
+// </copyright>
+//------------------------------------------------------------------------------------------------------
+
 namespace Bushido.Common.Models.DemoDb
 {
     using System;
-    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
 
+    [Table("data.BankAccountHistory")]
     public partial class BankAccountHistory
     {
         [Key]
